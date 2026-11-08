@@ -1,0 +1,4 @@
+Split,Rows,Patients,Positive cases,Positive rate (%)
+Train,71395,50062,8019,11.23
+Validation,15263,10728,1696,11.11
+Test,15108,10728,1642,10.87

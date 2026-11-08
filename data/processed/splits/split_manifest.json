@@ -1,0 +1,18 @@
+{
+    "random_state": 42,
+    "split_method": "GroupShuffleSplit",
+    "group_column": "patient_nbr",
+    "target_column": "readmission_30d",
+    "target_mapping": {
+        "<30": 1,
+        "NO": 0,
+        ">30": 0
+    },
+    "excluded_from_model_features": [
+        "encounter_id",
+        "patient_nbr",
+        "readmitted",
+        "readmission_30d"
+    ],
+    "note": "patient_nbr is retained in split CSVs for auditing only. Drop it before model training."
+}
